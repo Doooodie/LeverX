@@ -5,151 +5,211 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>LeverX</title>
 		<link rel="stylesheet" href="style/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
+			rel="stylesheet"
+		/>
 		<script src="https://kit.fontawesome.com/27affdde6a.js"></script>
 	</head>
 	<body>
-		<div id="menu" class="flex-container">
-			<ul style="list-style-type: none;">
-				<li>
-					<p>Stores list</p>
-					<input placeholder="Search">
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
+		<div class="flex-container">
+			<div id="menu">
+				<ul class="menu-list">
+					<li class="search">
+						<p>Stores list</p>
+						<div class="input-field">
+							<input placeholder="Search" />
+							<button>
+								<i class="fas fa-search"></i>
+							</button>
+							<button>
+								<i class="fas fa-sync"></i>
+							</button>
+						</div>
+					</li>
+					<li class="control-buttons">
+						<div class="pin-up">
+							<button>
+								<i class="fas fa-angle-up"></i>
+							</button>
+							<button>
+								<i class="fas fa-thumbtack"></i>
+							</button>
+						</div>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Funk - Daniel</th>
+								<th>5098</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>AL, Port, 6357 Macejkovic Crossing</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Schiller - West</th>
+								<th>8082</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>MA, New, 3002 Daugherty Park</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Schumm, O&lsquo;Keefe and Hudson</th>
+								<th>6952</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>GA, New, 30506 Bogisich Club</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Gottlieb, Thompson and Batz</th>
+								<th>8419</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>WA, Lake, 376 Al Terrace</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Stiedemann Inc</th>
+								<th>7519</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>IA, New, 0314 Anderson Valley</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Kuphal - Hoppe</th>
+								<th>3473</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>TX, South, 4680 Maggio Vista</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>O&lsquo;Reilly - Cormier</th>
+								<th>3789</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>CT, South, 95111 Martine Falls</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Bergstrom - Hyatt</th>
+								<th>2199</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>MI, Lake, 223 Joesph Shore</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Berge - Grimes</th>
+								<th>3475</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>GA, Lake, 28540 Al Vista</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<th>Berge - Grimes</th>
+								<th>3475</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>sq.m</td>
+							</tr>
+							<tr>
+								<td>GA, Lake, 28540 Al Vista</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<div id="main">
+				<div class="store-details">
+					<p>Store Details</p>
+					<table border="1" style="border-collapse: collapse;">
 						<tr>
-							<th>Funk - Daniel</th>
-							<th>5098</th>
+							<td><b>Email:</b> Lucienne_Emard16@yahoo.com</td>
+							<td><b>Established Date:</b> Dec 20, 2018</td>
 						</tr>
 						<tr>
-							<td></td>
-							<td>sq.m</td>
+							<td><b>Phone Number:</b> 650.029.9794. x6382</td>
+							<td><b>Floor Area:</b> 8082</td>
 						</tr>
 						<tr>
-							<td>AL, Port, 6357 Macejkovic Crossing</td>
+							<td><b>Address:</b> MA, New, 3002 Daugherty Park</td>
 						</tr>
 					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Schiller - West</th>
-							<th>8082</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>MA, New, 3002 Daugherty Park</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Schumm, O&lsquo;Keefe and Hudson</th>
-							<th>6952</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>GA, New, 30506 Bogisich Club</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Gottlieb, Thompson and Batz</th>
-							<th>8419</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>WA, Lake, 376 Al Terrace</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Stiedemann Inc</th>
-							<th>7519</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>IA, New, 0314 Anderson Valley</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Kuphal - Hoppe</th>
-							<th>3473</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>TX, South, 4680 Maggio Vista</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>O&lsquo;Reilly - Cormier</th>
-							<th>3789</th>
-						</tr>
-						<tr>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>CT, South, 95111 Martine Falls</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Bergstrom - Hyatt</th>
-							<th>2199</th>
-						</tr>
-						<tr>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>MI, Lake, 223 Joesph Shore</td>
-						</tr>
-					</table>
-				</li>
-				<li>
-					<table border=1 style="border-collapse: collapse;">
-						<tr>
-							<th>Berge - Grimes</th>
-							<th>3475</th>
-						</tr>
-						<tr>
-							<td>sq.m</td>
-						</tr>
-						<tr>
-							<td>GA, Lake, 28540 Al Vista</td>
-						</tr>
-					</table>
-				</li>
-			</ul>
-		</div>
-		<div id="main" class="flex-container">
-
+				</div>
+				<div class="amount-of-products">
+					<div>100 All</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

@@ -1,21 +1,126 @@
-body {
-    margin: 0;
-}
-
-#menu {
-    overflow-y: scroll;
-    flex: 1;
-}
-
-#main {
-    flex: 3;
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: "Muli", sans-serif;
 }
 
 .flex-container {
-    display: flex;
+	display: flex;
 }
 
-ul > li {
-    padding: 15px;
-    border-bottom: solid gainsboro 1px;
+#menu {
+	flex: 0 0 350px;
+	height: 100vh;
+}
+
+.menu-list {
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.search {
+	background-color: #eff4f8;
+	padding: 0 15px 20px 15px;
+	border-bottom: solid gainsboro 1px;
+	box-shadow: 0 1px 10px -2px steelblue;
+}
+
+.search > p {
+	font-size: x-large;
+	margin: 0;
+	padding: 10px 0 20px 0;
+}
+
+.input-field {
+	display: flex;
+	align-items: center;
+}
+
+.input-field > input {
+	width: 300px;
+	height: 25px;
+	border: solid gainsboro 1px;
+}
+
+.input-field > input::placeholder {
+	padding-left: 5px;
+	font-style: italic;
+}
+
+.input-field > button {
+	height: 25px;
+	width: 30px;
+	cursor: pointer;
+	background: white;
+	border: solid gainsboro 1px;
+	border-left: none;
+	border-right: none;
+	color: steelblue;
+}
+
+.input-field > button:first-of-type {
+	margin-left: -61px;
+}
+
+.input-field > button:hover {
+	background: lightgray;
+}
+
+.control-buttons {
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.pin-up {
+    display: flex;
+    justify-content: center;
+}
+
+.pin-up > button {
+    width: 35px;
+    height: 20px;
+    background: #CEE1EF;
+    color: steelblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pin-up > button:first-of-type {
+    margin-right: 5px;
+}
+
+.pin-up >button:hover {
+    background: #9dacb6;
+}
+
+ul > li:not(.search) + li {
+	padding: 15px;
+	border-bottom: solid gainsboro 1px;
+}
+
+li:not(.search) > table {
+	border-collapse: collapse;
+}
+
+li:not(.search) > table th:first-child {
+	width: 250px;
+}
+
+#main {
+	flex: 1 1;
+	align-self: flex-start;
+	height: 100vh;
+}
+
+.amount-of-products {
+	display: flex;
+	align-items: center;
 }
