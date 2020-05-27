@@ -1,126 +1,328 @@
 * {
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
-	font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
 }
 
 .flex-container {
-	display: flex;
+  display: flex;
 }
 
 #menu {
-	flex: 0 0 350px;
-	height: 100vh;
+  flex: 0 0 350px;
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .menu-list {
-	margin: 0;
-	padding-left: 0;
-	list-style-type: none;
-	overflow-y: scroll;
-	height: 100vh;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .search {
-	background-color: #eff4f8;
-	padding: 0 15px 20px 15px;
-	border-bottom: solid gainsboro 1px;
-	box-shadow: 0 1px 10px -2px steelblue;
+  background-color: #eff4f8;
+  padding: 0 15px 20px 15px;
+  border-bottom: solid gainsboro 1px;
+  box-shadow: 0 1px 10px -2px steelblue;
 }
 
 .search > p {
-	font-size: x-large;
-	margin: 0;
-	padding: 10px 0 20px 0;
+  font-size: x-large;
+  margin: 0;
+  padding: 10px 0 20px 0;
 }
 
 .input-field {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  border: solid gainsboro 1px;
+}
+
+.input-field:hover {
+  border: solid #8da1a4 1px;
 }
 
 .input-field > input {
-	width: 300px;
-	height: 25px;
-	border: solid gainsboro 1px;
+  width: 300px;
+  height: 25px;
+  border: none;
 }
 
 .input-field > input::placeholder {
-	padding-left: 5px;
-	font-style: italic;
+  padding-left: 5px;
+  font-style: italic;
 }
 
 .input-field > button {
-	height: 25px;
-	width: 30px;
-	cursor: pointer;
-	background: white;
-	border: solid gainsboro 1px;
-	border-left: none;
-	border-right: none;
-	color: steelblue;
+  height: 25px;
+  width: 30px;
+  cursor: pointer;
+  background: white;
+  border: none;
+  color: steelblue;
 }
 
 .input-field > button:first-of-type {
-	margin-left: -61px;
+  margin-left: -55px;
 }
 
 .input-field > button:hover {
-	background: lightgray;
+  background: lightgray;
 }
 
 .control-buttons {
-    position: relative;
-    bottom: 10px;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .pin-up {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .pin-up > button {
-    width: 35px;
-    height: 20px;
-    background: #CEE1EF;
-    color: steelblue;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  width: 35px;
+  height: 20px;
+  background: #cee1ef;
+  color: steelblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .pin-up > button:first-of-type {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
-.pin-up >button:hover {
-    background: #9dacb6;
+.pin-up > button:hover {
+  background: #9dacb6;
 }
 
 ul > li:not(.search) + li {
-	padding: 15px;
-	border-bottom: solid gainsboro 1px;
+  padding: 15px;
+  border-bottom: solid gainsboro 1px;
+}
+
+ul > li:not(.search) + li:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
 }
 
 li:not(.search) > table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 li:not(.search) > table th:first-child {
-	width: 250px;
+  width: 250px;
+}
+
+.store-location {
+  height: 20px;
+  max-width: 250px;
+  font-size: smaller;
+}
+
+.measure-unit {
+  height: 20px;
+  font-size: x-small;
+  text-align: right;
+}
+
+.bottom-menu {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  bottom: 20px;
+  background: #485b6c;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.left {
+  left: 15px;
+  width: 300px;
+}
+
+.right {
+  left: 360px;
+  right: 30px;
+}
+
+.bottom-menu > button {
+  height: 25px;
+  margin: 5px;
+  background: #2a4157;
+  color: #c7def2;
+  border-radius: 4px;
+  border: solid #c7def2 1px;
+}
+
+.bottom-menu > button:nth-of-type(2) {
+  color: #C58488;
+  border: solid #C58488 1px;
+}
+
+.bottom-menu > button:hover {
+  cursor: pointer;
+  background-color: #777777;
+}
+
+.bottom-menu > button > * {
+  margin: 5px;
 }
 
 #main {
-	flex: 1 1;
-	align-self: flex-start;
-	height: 100vh;
+  flex: 1 1 100%;
+  align-self: flex-start;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.store-details-table {
+  border-collapse: collapse;
+  width: 600px;
+}
+
+div.search > hr {
+  height: 2px;
+  margin: 20px -15px 0 -15px;
+  border: none;
+  background-color: #d6e2ea;
+}
+
+div.search .control-buttons {
+  bottom: 11px;
 }
 
 .amount-of-products {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.amount-of-products > div {
+  margin-right: 30px;
+}
+
+.amount-of-products span,
+.amount-of-products p {
+  font-size: x-small;
+}
+
+.amount-all {
+  margin-left: 30px;
+  margin-bottom: -37px;
+  padding-bottom: 37px;
+  border-bottom: solid #6182a3 2px;
+}
+
+.amount-all span:first-of-type {
+  font-size: x-large;
+  margin-right: 5px;
+}
+
+.amount-all span:last-of-type {
+  font-size: x-small;
+  vertical-align: text-top;
+}
+
+.horizontal-line {
+  height: 50px;
+  border-right: solid #d6e2ea 2px;
+}
+
+.button-ok p,
+.button-storage p,
+.button-out-of-stock p {
+  text-align: center;
+}
+
+.button-ok span,
+.button-storage span,
+.button-out-of-stock span {
+  vertical-align: top;
+}
+
+.button-ok > div,
+.button-storage > div,
+.button-out-of-stock > div {
+  display: inline-block;
+}
+
+.button-ok button,
+.button-storage button,
+.button-out-of-stock button:hover {
+  cursor: pointer;
+}
+
+.amount-of-products div button {
+  background: none;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.button-ok button {
+  border: solid green 1px;
+  color: green;
+}
+
+.button-storage button {
+  border: solid orange 1px;
+  color: orange;
+}
+
+.button-out-of-stock button {
+  border: solid red 1px;
+  color: red;
+}
+
+.products-table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+.products-table td {
+  padding: 10px;
+}
+
+.table-header {
+  background-color: #f7f7f7;
+  border-bottom: solid gainsboro 1px;
+}
+
+.header-name {
+  font-size: larger;
+}
+
+.table-header:nth-of-type(2) {
+  font-size: small;
+}
+
+.table-product {
+  font-size: small;
+  border-bottom: solid gainsboro 1px;
+}
+
+.table-product:hover {
+  cursor: pointer;
+  background-color: #ded9d9;
+}
+
+.product-price {
+  text-align: end;
+}
+
+.product-rating {
+  font-size: x-large;
+}
+
+.star-full {
+  color: orange;
 }
